@@ -19,6 +19,7 @@
 #include <CLI/App.hpp>
 #include <CLI/Config.hpp>
 #include <CLI/Formatter.hpp>
+#include <CLI/ExtraValidators.hpp>
 #include <spdlog/cfg/env.h>
 #include <spdlog/spdlog.h>
 
