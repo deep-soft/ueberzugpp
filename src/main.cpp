@@ -22,6 +22,12 @@
 #include <spdlog/cfg/env.h>
 #include <spdlog/spdlog.h>
 
+#include <CLI/Version.hpp>
+#if (CLI11_VERSION_MAJOR >= 3) || (CLI11_VERSION_MAJOR == 2 && CLI11_VERSION_MINOR >= 6)
+// CLI11 2.6.0 and beyond requires this header file for the CLI::IsMember validator.
+#include <CLI/ExtraValidators.hpp>
+#endif
+
 #include "application.hpp"
 #include "flags.hpp"
 #include "tmux.hpp"
